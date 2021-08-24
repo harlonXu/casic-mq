@@ -1,0 +1,12 @@
+com\casic\mq\config\TopicRabbitConfig.class
+com\casic\mq\utils\SpringBootBeanUtil.class
+com\casic\mq\domain\MessageTemp.class
+com\casic\mq\service\HandsetService.class
+com\casic\mq\enums\QueueEnum.class
+com\casic\mq\receive\MessageReceiver.class
+com\casic\mq\service\HandsetServiceImpl.class
+com\casic\mq\constant\QueueConstant.class
+com\casic\mq\provider\MessageProvider.class
+com\casic\mq\config\TopicRabbitConfig$1.class
+com\casic\mq\config\TopicRabbitConfig$2.class
+com\casic\mq\RabbitMQApplication.class

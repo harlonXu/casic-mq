@@ -1,0 +1,33 @@
+server:
+  port: 9000
+  ipAdd: 192.168.1.1
+
+  #一级中心
+  ipAddTop: 192.168.1.1
+  #二级中心1
+  ipAddSec1: 192.168.1.11
+  #二级中心2
+  ipAddSec2: 192.168.1.12
+  #二级中心3
+  ipAddSec3: 192.168.1.13
+  #二级中心4
+  ipAddSec4: 192.168.1.14
+spring:
+  application:
+    name: rabbitmq
+  rabbitmq:
+    host: 192.168.1.240
+    port: 5672
+    username: rabbitmq
+    password: rabbitmq
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 4
+          initial-interval: 2000
+        acknowledge-mode: manual
+    #确认消息发送到交换器/队列
+    publisher-confirms: true
+    publisher-returns: true
+
